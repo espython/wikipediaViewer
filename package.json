@@ -1,0 +1,24 @@
+{
+  "name": "wikipedia-viewer-fcc",
+  "version": "0.1.0",
+  "description": "wikipedia viewer for free code camp ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "web",
+    "app"
+  ],
+  "author": "espython",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.26",
+    "nodemon": "^1.11.0"
+  }
+}
