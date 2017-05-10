@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    background-color: #80DEEA;
 }
 
 .navbar {
@@ -10,4 +11,21 @@ body {
     font-family: 'Lobster', cursive;
     color: white;
     margin-top: 10px;
+}
+
+.search-group {
+    margin-top: 200px;
+}
+
+#searchbox {
+    width: 400px;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.random {
+    font-family: 'Lobster', cursive;
+    text-align: center;
 }
