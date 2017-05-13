@@ -13,6 +13,31 @@ $(document).ready(function() {
             dataType: 'jsonp',
             success: function(data) {
                 console.log(data);
+                var obj = data.query.pages;
+
+                Object.keys(obj).forEach(function(key) {
+                    console.log(key, obj[key].pageid);
+                    console.log(key, obj[key].extract);
+                    var pageLink = "https://en.wikipedia.org/?curid=" + obj[key].pageid;
+                    target = "_blank"
+
+                    $('#output').prepend("<li><p> " + obj[key].title + "</p></li>");
+                    $('li').click(function() {
+                        console.log(pageLink);
+
+                        window.open($(this).find("a").attr(pageLink, "_blank"));
+
+                    });
+
+                });
+                // var result = Object.keys(data).map(function(e) {
+                //     return [Number(e), data[e]];
+                // });
+
+
+
+
+
 
             },
             error: function(errorMessage) {
