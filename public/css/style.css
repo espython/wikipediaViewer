@@ -14,11 +14,13 @@ body {
 }
 
 .search-group {
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 #searchbox {
-    width: 400px;
+    padding: 10px;
+    margin: 10px;
 }
 
 h3 {
@@ -27,26 +29,34 @@ h3 {
 
 .random {
     font-family: 'Lobster', cursive;
+    font-weight: bolder;
     text-align: center;
+    margin: 15px;
+    color: black;
 }
 
 ul {
     list-style-type: none;
+    padding: 0px;
 }
 
+
+/*
 li {
-    height: 50px;
     background-color: #FAFAFA;
     margin: 10px;
+    
+    color: #212121;
+}*/
+
+.style {
+    background-color: #212121;
+    color: #F5F5F5;
+    margin-top: 15px;
+    padding: 10px;
     font-size: 22px;
     font-weight: bold;
-    font-family: 'Lobster', cursive;
-    color: #212121;
-    position: relative;
-}
-
-p {
-    margin-top: 10px;
-    position: absolute;
-    margin-left: 576px;
+    font-family: 'Bree Serif', serif;
+    border-radius: 10px;
+    text-align: center;
 }

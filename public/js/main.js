@@ -12,27 +12,28 @@ $(document).ready(function() {
             contentType: 'application/json',
             dataType: 'jsonp',
             success: function(data) {
-                console.log(data);
                 var obj = data.query.pages;
 
                 Object.keys(obj).forEach(function(key) {
                     console.log(key, obj[key].pageid);
                     console.log(key, obj[key].extract);
                     var pageLink = "https://en.wikipedia.org/?curid=" + obj[key].pageid;
-                    target = "_blank"
 
-                    $('#output').prepend("<li><p> " + obj[key].title + "</p></li>");
+
+                    $('#output').prepend("<li><div class='container'><p>" + obj[key].title + "</p><p>" + obj[key].extract + "</p></div></li>");
+                    $('li div').addClass('style');
                     $('li').click(function() {
-                        console.log(pageLink);
+                        // $('a').attr({
+                        //     "target": "-blank",
+                        //     "href": "pageLink",
+                        // });
+                        window.open(pageLink, '_blank');
 
-                        window.open($(this).find("a").attr(pageLink, "_blank"));
 
                     });
 
                 });
-                // var result = Object.keys(data).map(function(e) {
-                //     return [Number(e), data[e]];
-                // });
+
 
 
 
